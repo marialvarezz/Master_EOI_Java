@@ -20,6 +20,7 @@ public class EjemploLambda {
                 n*=2;
             }
             System.out.println("n = " + n);
+
         });
         System.out.println("------------------------------------");
 
@@ -35,10 +36,13 @@ public class EjemploLambda {
         imprimeTexto("Laura",admiración);
 
         //Lambda + Interfaz FunciónNumeros
-        FunciónNúmeros suma=(i,v)->i+v;
+        FunciónNúmeros suma=(i,v)->{return i+v;};
         System.out.println("suma.ejecuta(3,6) = " + suma.ejecuta(3,6));
         FunciónNúmeros resta=(i,v)->i-v;
         System.out.println("resta.ejecuta(99,67) = " + resta.ejecuta(99,67));
+
+
+
     }
     public static void imprimeTexto(String str,FunciónString ind){
         System.out.println(ind.ejecuta(str));

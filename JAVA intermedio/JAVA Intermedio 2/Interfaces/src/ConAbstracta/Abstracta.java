@@ -8,4 +8,5 @@ abstract public class Abstracta implements Interface1 { //Una clase abstracta co
     }
     abstract void saludo();
 
+
 }
