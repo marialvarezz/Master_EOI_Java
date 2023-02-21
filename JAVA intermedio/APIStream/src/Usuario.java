@@ -2,12 +2,17 @@ public class Usuario {
     private String nombre;
     private String apellido;
     private String email;
+    private String tlfno;
 
-    public Usuario(String nombre, String apellido, String email) {
+    //constructor
+
+    public Usuario(String nombre, String apellido, String email, String tlfno) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;
+        this.tlfno = tlfno;
     }
+    //set y get
 
     public String getNombre() {
         return nombre;
@@ -33,12 +38,23 @@ public class Usuario {
         this.email = email;
     }
 
+    public String getTlfno() {
+        return tlfno;
+    }
+
+    public void setTlfno(String tlfno) {
+        this.tlfno = tlfno;
+    }
+
+    //toString
+
     @Override
     public String toString() {
         return "Usuario{" +
                 "nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", email='" + email + '\'' +
+                ", tlfno='" + tlfno + '\'' +
                 '}';
     }
 }
